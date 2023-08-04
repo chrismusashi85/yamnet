@@ -83,6 +83,7 @@ plt.xlim([-patch_padding-0.5, scores.shape[0] + patch_padding-0.5])
 yticks = range(0, top_n, 1)
 plt.yticks(yticks, [class_names[top_class_indices[x]] for x in yticks])
 _ = plt.ylim(-0.5 + np.array([top_n, 0]))
+plt.show()
 
 
 
